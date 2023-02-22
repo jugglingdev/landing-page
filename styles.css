@@ -5,21 +5,27 @@
 }
 
 body {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+section {
+    padding: 0 200px;
+}
+
+.hero-header, footer {
+    background-color: #1F2937;
 }
 
 header {
-    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    padding: 22px 200px;
+    padding: 20px 0;
 }
 
-header > h1 {
+header h1 {
     font-size: 24px;
-    color: #F9FAF8
+    color: #F9FAF8;
 }
 
 ul {
@@ -28,94 +34,122 @@ ul {
     gap: 20px;
 }
 
-a {
+header a {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
 }
 
+header a:hover {
+    color: #3882F6;
+}
+
+header a:active {
+    color: purple;
+}
+
 .hero {
-    background-color: #1F2937;
-    padding: 120px 200px;
+    padding-top: 100px;
+    padding-bottom: 120px;
     display: flex;
     justify-content: space-between;
     gap: 48px;
 }
 
-.text {
+.hero-text {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
 }
 
-.text > h1 {
+.hero-text h1 {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 900;
     color: #F9FAF8;
     margin-bottom: 6px;
     line-height: 1;
 }
 
-.text > p {
+.hero-text p {
     font-size: 18px;
     color: #E5E7EB;
     margin-bottom: 12px;
 }
 
-.text a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #E5E7EB;
-}
-
-.img-container {
-    width: 1600px;
-    background-color: rgba(143, 148, 158, 0.952);
-}
-
-button {
+.hero-text button {
     background-color: #3882F6;
     padding: 8px 36px;
     border-radius: .6em;
     border-width: 0;
 }
 
+.hero-text a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #E5E7EB;
+}
+
+.hero-img {
+    width: 1600px;
+    background-color: rgba(143, 148, 158, 0.952);
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .info {
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 120px;
     text-align: center;
-    padding: 60px 200px;
 }
 
 .info h1 {
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 900;
     color: #1F2937;
-    margin-bottom: 60px;
+    margin-bottom: 52px;
 }
 
 .card-container {
     display: flex;
     justify-content: space-around;
+    gap: 50px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 60px;
-}
-
-.card-container img {
-    height: 160px;
-    width: 160px;
-    border: 4px solid #3882F6;
-    border-radius: .9em;
-    margin-bottom: 12px;
 }
 
 .card {
-    width: 160px;
+    width: 170px;
+}
+
+.card img {
+    height: 170px;
+    width: 170px;
+    border: 4px solid #3882F6;
+    border-radius: .9em;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #1f2937bd;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .quote {
     background-color: #E5E7EB;
-    padding: 60px 320px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+figure {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 blockquote {
@@ -129,18 +163,20 @@ figcaption {
     text-align: right;
     font-size: 26px;
     font-weight: 700;
-    margin: 12px 48px;
+    color: #1F2937;
+    margin: 10px 48px;
 }
 
 .call-to-action {
-    padding: 60px 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.container {
+.CTA-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 50px 120px;
-    margin: 40px;
     background-color: #3882F6;
     border-radius: .5em;
 }
@@ -153,26 +189,31 @@ figcaption {
 
 .CTA p {
     color: #E5E7EB;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.container > button {
+.CTA-container button {
     background-color: #3882F6;
-    padding: 8px 36px;
+    padding: 8px 36px;    
     border-radius: .6em;
     border: 2px solid #E5E7EB;
 }
 
-.container a {
-    font-weight: 800;
-    font-size: 18px;
+.CTA-container a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    color: #F9FAF8;
 }
 
 footer {
-    background-color: #1F2937;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    padding: 40px;
+}
+
+footer p {
     color: #E5E7EB;
+    font-size: 18px;
 }
